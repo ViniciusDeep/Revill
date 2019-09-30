@@ -6,7 +6,7 @@
 //  Copyright © 2019 Revill. All rights reserved.
 //
 
-import UIKit
+import SwiftUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
