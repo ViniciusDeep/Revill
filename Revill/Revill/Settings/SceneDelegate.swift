@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Revill
 //
-//  Created by aluno on 30/09/19.
+//  Created by Vinicius Mangueira on 30/09/19.
 //  Copyright © 2019 Revill. All rights reserved.
 //
 
