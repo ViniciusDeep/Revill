@@ -8,18 +8,25 @@
 
 import Combine
 import SwiftUI
+import Foundation
+
+
 /// Layer of service is here
 class Providey<T: Decodable>: ObservableObject {
     
-    var didChange = PassthroughSubject<Providey, Never>()
+    let didChange = PassthroughSubject<Providey, Never>()
     
     var elements = [T]() {
         didSet {
-           // didChange(self)
+            didChange.send(self)
         }
     }
     
-    init() {
-           
+     func get(withUrl url: String, completion: @escaping (Result<T, Error>) -> ()) {
+        
     }
 }
+    
+    
+  
+
