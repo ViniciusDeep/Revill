@@ -10,23 +10,25 @@ import Combine
 import SwiftUI
 import Foundation
 
-
 /// Layer of service is here
 class Providey<T: Decodable>: ObservableObject {
-    
-    let didChange = PassthroughSubject<Providey, Never>()
-    
-    var elements = [T]() {
-        didSet {
-            didChange.send(self)
-        }
-    }
-    
      func get(withUrl url: String, completion: @escaping (Result<T, Error>) -> ()) {
-        
+        guard let url = URL(string: url) else {return print("Bug")}
+        URLSession.shared.dataTask(with: url) { (data, _ , error) in
+            if let err = error {completion(.failure(err))}
+            
+            guard let data = data else {return}
+            
+            do {
+                let result = try JSONDecoder().decode(T.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(result))
+                }
+            } catch {
+                completion(.failure(error))
+            }
+        }.resume()
     }
 }
-    
-    
-  
+
 
