@@ -1,0 +1,7 @@
+os: osx
+language: objective-c
+osx_image: xcode11
+script:
+  - set -o pipefail && xcodebuild build -project Revill.xcodeproj -scheme Revill -sdk iphonesimulator12.2 -destination 'name=iPhone 8,OS=13' ONLY_ACTIVE_ARCH=NO | xcpretty
+
+
