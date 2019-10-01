@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="200" height="50" alt="Screen Shot 2019-08-28 at 22 25 25" src="https://user-images.githubusercontent.com/32227073/65842195-1d254e00-e300-11e9-920c-1e9bb03068f4.png">
+    <img width="170" height="120" alt="Screen Shot 2019-08-28 at 22 25 25" src="https://user-images.githubusercontent.com/32227073/65842195-1d254e00-e300-11e9-920c-1e9bb03068f4.png">
 </p>
 
 ✨ Revill is App to list games and search games 
