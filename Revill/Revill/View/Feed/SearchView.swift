@@ -14,9 +14,7 @@ struct SearchView: View {
             VStack(alignment: .leading) {
                     Text("Welcome").font(.title)
                     Text("To your daily of games").font(.largeTitle)
-                
                 }
-
             }.background(Color(.red)).cornerRadius(8)
     }
 }

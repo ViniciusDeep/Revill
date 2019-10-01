@@ -13,6 +13,7 @@ struct CategoriesView: View {
     var body: some View {
         Text("")
     }
+
 }
 
 /// Mocked dates dates come to API
