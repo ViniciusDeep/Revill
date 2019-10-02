@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ListOfGames: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        List {
+            RowGames()
+            RowGames()
+            RowGames()
+            RowGames()
+            }.background(Color.purple).accentColor(Color.purple)
     }
 }
 

@@ -10,6 +10,6 @@ import SwiftUI
 /// HighlightedCardView, center Card
 struct HighlightedCardView: View {
     var body: some View {
-        Image("highPlaceHolder").resizable().scaledToFill().frame(height: 400).clipped()
+        Image("highPlaceHolder").resizable().scaledToFit().frame(height: 400).clipped()
     }
 }
