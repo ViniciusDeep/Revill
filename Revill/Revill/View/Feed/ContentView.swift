@@ -15,8 +15,7 @@ struct ContentView: View {
             CategoriesView()
             HighlightedCardView()
             ListOfGames()
-        }.padding()
-
+        }.background(Color.purple).edgesIgnoringSafeArea(.all)
     }
 }
 

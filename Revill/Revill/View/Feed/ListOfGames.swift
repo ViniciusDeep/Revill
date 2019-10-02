@@ -11,16 +11,11 @@ import SwiftUI
 struct ListOfGames: View {
     var body: some View {
         List {
-            VStack {
-              HStack {
-                Image("highPlaceHolder").resizable().frame(width: 100 ,height: 100)
-                VStack {
-                    Text("The last of Us")
-                    Text("Survivor")
-                }
-              }
-            }
-        }
+            RowGames()
+            RowGames()
+            RowGames()
+            RowGames()
+            }.background(Color.purple).accentColor(Color.purple)
     }
 }
 

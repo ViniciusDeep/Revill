@@ -68,6 +68,7 @@ enum Categories: String, CaseIterable {
     case upComing = "UPComing"
     case topList = "Top List"
     case adventure = "Adventure"
+    case tripleA = "AAA"
 }
 
 /// Extension to be able to get the index of a Categories
