@@ -13,13 +13,12 @@ struct CategoriesView: View {
     @State private var selected: Int = 0 // Selected button on the menu bar
     
     let categories: [Categories] = Categories.allCases // Array with all categories
-    let backgroundColor: Color
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(self.categories, id: \.self) { category in // Displays each category on the menu bar
-                    CategoryButton(selection: self.$selected, category: category, color: self.backgroundColor)
+                    CategoryButton(selection: self.$selected, category: category)
                         .padding(.trailing, 10)
                 }
             }
@@ -33,27 +32,32 @@ struct CategoryButton: View {
     @Binding var selection: Int // Selected menu button binding
     
     let category: Categories // Category of the button
-    let color: Color
     var selected: Bool {
         return selection == category.index // Checks if this button is the selected one
     }
+    
+    // Layout variables
+    let color: Color = Color.purple
+    let cornerRadius: CGFloat = 16
+    let borderWidth: CGFloat = 2
+    let shadowOpacity: Double = 0.25
     
     var body: some View {
         Button(action: {
             self.selection = self.category.index // Updates the selected button when tapped
         }, label: {
             Text(self.category.rawValue)
-                .shadow(color: Color.black.opacity(self.selected ? 0 : 0.25), radius: 4, x: 0, y: 4) // Text shadow (if selected, doesnt appear)
+                .shadow(color: Color.black.opacity(self.selected ? 0 : shadowOpacity), radius: 4, x: 0, y: 4) // Text shadow (if selected, doesnt appear)
                 .padding(.vertical, 10)
-                .padding(.horizontal, 20)
+                .padding(.horizontal, cornerRadius)
                 .background(color)
-                .cornerRadius(20)
+                .cornerRadius(cornerRadius)
                 .foregroundColor(.white)
                 .overlay(
-                    RoundedRectangle(cornerRadius: 20) // Overlay to display round border
-                        .stroke(Color.white, lineWidth: self.selected ? 2 : 0) // Border (only appears if selected)
+                    RoundedRectangle(cornerRadius: cornerRadius) // Overlay to display round border
+                        .stroke(Color.white, lineWidth: self.selected ? borderWidth : 0) // Border (only appears if selected)
                 )
-                .shadow(color: Color.black.opacity(self.selected ? 0.25 : 0), radius: 4, x: 0, y: 4) // Background shadow (only appears if selected)
+                .shadow(color: Color.black.opacity(self.selected ? shadowOpacity : 0), radius: 4, x: 0, y: 4) // Background shadow (only appears if selected)
         })
         .padding(.vertical)
     }
