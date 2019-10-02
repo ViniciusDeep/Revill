@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		578D1A3023421BEA00211722 /* RevillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D1A2F23421BEA00211722 /* RevillTests.swift */; };
 		578D1A41234251AD00211722 /* Providey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D1A40234251AD00211722 /* Providey.swift */; };
 		578D1A442342589600211722 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D1A432342589600211722 /* SearchView.swift */; };
+		79E0A05D23442ACE005B233C /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 79E0A05C23442ACE005B233C /* SwiftUIFlux */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E0A05D23442ACE005B233C /* SwiftUIFlux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +233,9 @@
 			dependencies = (
 			);
 			name = Revill;
+			packageProductDependencies = (
+				79E0A05C23442ACE005B233C /* SwiftUIFlux */,
+			);
 			productName = Revill;
 			productReference = 578D1A1523421BE900211722 /* Revill.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 578D1A0C23421BE900211722;
+			packageReferences = (
+				79E0A05B23442ACE005B233C /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
+			);
 			productRefGroup = 578D1A1623421BE900211722 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -610,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79E0A05B23442ACE005B233C /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79E0A05C23442ACE005B233C /* SwiftUIFlux */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79E0A05B23442ACE005B233C /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;
+			productName = SwiftUIFlux;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 578D1A0D23421BE900211722 /* Project object */;
 }
