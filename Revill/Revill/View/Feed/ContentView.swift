@@ -14,8 +14,10 @@ struct ContentView: View {
             SearchView().scaledToFill()
             .frame(height: 100)
             .clipped()
+            CategoriesView()
             HighlightedCardView()
             Spacer()
+            
         }.padding()
     }
 }
