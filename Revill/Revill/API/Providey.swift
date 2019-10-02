@@ -12,7 +12,7 @@ import Foundation
 
 /// Layer of service is here
 class Providey<T: Decodable>: ObservableObject {
-     func get(withUrl url: String, completion: @escaping (Result<T, Error>) -> ()) {
+     func get(withUrl url: String, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = URL(string: url) else {return print("Bug")}
         URLSession.shared.dataTask(with: url) { (data, _ , error) in
             if let err = error {completion(.failure(err))}
