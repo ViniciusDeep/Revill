@@ -10,7 +10,17 @@ import SwiftUI
 
 struct ListOfGames: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        List {
+            VStack {
+              HStack {
+                Image("highPlaceHolder").resizable().frame(width: 100 ,height: 100)
+                VStack {
+                    Text("The last of Us")
+                    Text("Survivor")
+                }
+              }
+            }
+        }
     }
 }
 

@@ -15,6 +15,8 @@ struct SearchView: View {
                     Text("Welcome").font(.title)
                     Text("To your daily of games").font(.largeTitle)
                 }
-            }.background(Color(.red)).cornerRadius(8)
+            }.background(Color(.red)).cornerRadius(8).scaledToFill()
+            .frame(height: 100)
+            .clipped()
     }
 }

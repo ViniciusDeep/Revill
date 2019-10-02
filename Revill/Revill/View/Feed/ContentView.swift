@@ -11,14 +11,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            SearchView().scaledToFill()
-            .frame(height: 100)
-            .clipped()
+            SearchView()
             CategoriesView()
             HighlightedCardView()
-            Spacer()
-            
+            ListOfGames()
         }.padding()
+
     }
 }
 
