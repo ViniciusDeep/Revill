@@ -12,11 +12,20 @@ struct SearchView: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                    Text("Welcome").font(.title)
-                    Text("To your daily of games").font(.largeTitle)
-                }
-            }.background(Color(.white)).cornerRadius(8).scaledToFill()
-            .frame(height: 140)
-            .clipped()
+                Spacer()
+                Text("Welcome").font(.custom("Nunito-Regular", size: 24))
+                Text("To your daily of games").font(.custom("Nunito-Black", size: 24)).fontWeight(.black)
+                Spacer().frame(height: 16)
+                SearchField()
+            }
+            
+        }
+        .frame(height: 202)
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
+        .padding(.bottom, 32)
+        .background(Color(.white))
+        .cornerRadius(32)
+        .clipped()
     }
 }
