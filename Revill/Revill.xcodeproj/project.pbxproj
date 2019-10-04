@@ -25,6 +25,9 @@
 		578D1A442342589600211722 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D1A432342589600211722 /* SearchView.swift */; };
 		794307C92345455E00EA1315 /* RowGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794307C82345455E00EA1315 /* RowGames.swift */; };
 		79E0A05D23442ACE005B233C /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 79E0A05C23442ACE005B233C /* SwiftUIFlux */; };
+		A3587E172347B19400DAC4C0 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3587E162347B19400DAC4C0 /* SearchField.swift */; };
+		A3587E1F2347B25B00DAC4C0 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3587E192347B1D400DAC4C0 /* Nunito-Regular.ttf */; };
+		A3587E202347B26300DAC4C0 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3587E1B2347B1D400DAC4C0 /* Nunito-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,10 @@
 		578D1A40234251AD00211722 /* Providey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providey.swift; sourceTree = "<group>"; };
 		578D1A432342589600211722 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		794307C82345455E00EA1315 /* RowGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowGames.swift; sourceTree = "<group>"; };
+		A3587E162347B19400DAC4C0 /* SearchField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		A3587E192347B1D400DAC4C0 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		A3587E1A2347B1D400DAC4C0 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		A3587E1B2347B1D400DAC4C0 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +95,7 @@
 				571947E42342775C006B3DAE /* HighlightedCardView.swift */,
 				571947E623427EE6006B3DAE /* CategoriesView.swift */,
 				571947E823428078006B3DAE /* ListOfGames.swift */,
+				A3587E162347B19400DAC4C0 /* SearchField.swift */,
 				794307C82345455E00EA1315 /* RowGames.swift */,
 			);
 			path = Feed;
@@ -124,6 +132,7 @@
 		578D1A1723421BE900211722 /* Revill */ = {
 			isa = PBXGroup;
 			children = (
+				A3587E182347B1D400DAC4C0 /* Fonts */,
 				7973C657234429F100E46B66 /* Flux */,
 				578D1A3F23421D6600211722 /* Settings */,
 				578D1A422342583A00211722 /* View */,
@@ -219,6 +228,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A3587E182347B1D400DAC4C0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A3587E192347B1D400DAC4C0 /* Nunito-Regular.ttf */,
+				A3587E1A2347B1D400DAC4C0 /* Nunito-Bold.ttf */,
+				A3587E1B2347B1D400DAC4C0 /* Nunito-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +326,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3587E202347B26300DAC4C0 /* Nunito-Black.ttf in Resources */,
+				A3587E1F2347B25B00DAC4C0 /* Nunito-Regular.ttf in Resources */,
 				578D1A2523421BEA00211722 /* LaunchScreen.storyboard in Resources */,
 				578D1A2223421BEA00211722 /* Preview Assets.xcassets in Resources */,
 				578D1A1F23421BEA00211722 /* Assets.xcassets in Resources */,
@@ -351,6 +372,7 @@
 				571947E923428078006B3DAE /* ListOfGames.swift in Sources */,
 				571947E723427EE6006B3DAE /* CategoriesView.swift in Sources */,
 				794307C92345455E00EA1315 /* RowGames.swift in Sources */,
+				A3587E172347B19400DAC4C0 /* SearchField.swift in Sources */,
 				578D1A442342589600211722 /* SearchView.swift in Sources */,
 				571947F2234280C5006B3DAE /* ContentGameView.swift in Sources */,
 				578D1A1923421BE900211722 /* AppDelegate.swift in Sources */,
