@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct RowGames: View {
-    
     var body: some View {
          VStack {
            HStack {

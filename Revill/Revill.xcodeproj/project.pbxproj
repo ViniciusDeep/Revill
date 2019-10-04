@@ -91,11 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				578D1A1C23421BE900211722 /* ContentView.swift */,
+				A3587E162347B19400DAC4C0 /* SearchField.swift */,
 				578D1A432342589600211722 /* SearchView.swift */,
 				571947E42342775C006B3DAE /* HighlightedCardView.swift */,
 				571947E623427EE6006B3DAE /* CategoriesView.swift */,
 				571947E823428078006B3DAE /* ListOfGames.swift */,
-				A3587E162347B19400DAC4C0 /* SearchField.swift */,
 				794307C82345455E00EA1315 /* RowGames.swift */,
 			);
 			path = Feed;

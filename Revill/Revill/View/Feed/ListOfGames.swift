@@ -15,7 +15,7 @@ struct ListOfGames: View {
             RowGames()
             RowGames()
             RowGames()
-            }.background(Color.purple).accentColor(Color.purple)
+            }.background(Color.purple).offset(x: 0, y: -30)
     }
 }
 
