@@ -35,14 +35,15 @@
 - [ ] Component at Search(With labels and TextField follow Design above)
 - [ ] Horizontal list of categories like a section(With label and border follow Design above)
 - [ ] Highlighted card, card to describe the highlighted game for each categorie
-- [ ] Component at list of games with row at each game(With image, label and categorie) 
+- [ ] Component at list of games with row at each game(With image, label and categorie)
+- [ ] Component to save your favorite games(When tap in heart persist data at DB)
 - [ ] Component to list favorite games at categorie of favorite.
-
 
 ## Second Scene
 - [ ] Component at Banner(With image and skip button) 
 - [ ] Component at title and description
-- [ ] Component to Save your favorite games(When tap in heart persist data at DB)
+- [ ] Component to go to stores of the games such as Steam, Humble and Epic links of games.
+- [ ] Component for critical reviews and comments from users
 
 ### If you wanna to open a task, just made a pull-requets
 
