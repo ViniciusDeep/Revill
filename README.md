@@ -28,7 +28,7 @@
 
 ## Dev  
 - [ ] Service(In Providey file)
-- [X] Define Architeture(Redux but if you have any idea open the issue for that)         
+- [X] Define Architecture(Redux but if you have any idea open the issue for that)         
 - [ ] Write Tests(This task is just completed when test ever haha)
 
 ## First Scene
