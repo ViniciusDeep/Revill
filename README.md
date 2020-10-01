@@ -2,7 +2,7 @@
     <img height="128" alt="Screen Shot 2019-08-28 at 22 25 25" src="/design/wide.png">
 </p>
 
-✨ Revill is App to list games and search games 
+✨ Revill is App to list games and search best games 
 
 ✨ Design in Swift UI + Combine
 
