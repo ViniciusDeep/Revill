@@ -9,7 +9,7 @@
 import Combine
 import SwiftUI
 
-class Providey<T: Decodable>: BindableObject {    
+class Providey<T: Decodable>: ObservableObject {    
      func get(withUrl url: String, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = URL(string: url) else {return print("Bug")}
         URLSession.shared.dataTask(with: url) { (data, _ , error) in
