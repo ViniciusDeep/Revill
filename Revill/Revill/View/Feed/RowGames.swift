@@ -38,3 +38,9 @@ struct RowGames: View {
         .shadow(color: Color.black, radius: 2, x: 0, y: 2)
     }
 }
+
+struct RowGames_Previews: PreviewProvider {
+    static var previews: some View {
+        RowGames()
+    }
+}

@@ -133,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				A3587E182347B1D400DAC4C0 /* Fonts */,
-				7973C657234429F100E46B66 /* Flux */,
 				578D1A3F23421D6600211722 /* Settings */,
 				578D1A422342583A00211722 /* View */,
 				578D1A3A23421CCB00211722 /* API */,
@@ -187,45 +186,6 @@
 				571947EA23428081006B3DAE /* Feed */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7973C657234429F100E46B66 /* Flux */ = {
-			isa = PBXGroup;
-			children = (
-				7973C65B23442A1500E46B66 /* Model */,
-				7973C65A23442A0500E46B66 /* ViewState */,
-				7973C65923442A0000E46B66 /* Action */,
-				7973C658234429FB00E46B66 /* State */,
-			);
-			path = Flux;
-			sourceTree = "<group>";
-		};
-		7973C658234429FB00E46B66 /* State */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		7973C65923442A0000E46B66 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		7973C65A23442A0500E46B66 /* ViewState */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewState;
-			sourceTree = "<group>";
-		};
-		7973C65B23442A1500E46B66 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		A3587E182347B1D400DAC4C0 /* Fonts */ = {

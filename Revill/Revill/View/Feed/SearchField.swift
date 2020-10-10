@@ -24,3 +24,9 @@ struct SearchField: View {
         .clipped()
     }
 }
+
+struct SearchField_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchField()
+    }
+}
