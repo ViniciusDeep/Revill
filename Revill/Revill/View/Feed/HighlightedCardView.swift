@@ -13,3 +13,9 @@ struct HighlightedCardView: View {
         Image("highPlaceHolder").resizable().scaledToFit().frame(height: 400).clipped()
     }
 }
+
+struct HighlightedCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        HighlightedCardView()
+    }
+}

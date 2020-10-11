@@ -77,3 +77,9 @@ extension CaseIterable where Self: Equatable {
         return Self.allCases.firstIndex { self == $0 } ?? Self.allCases.endIndex
     }
 }
+
+struct CategoriesView_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoriesView()
+    }
+}
