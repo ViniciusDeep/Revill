@@ -10,12 +10,16 @@ import SwiftUI
 
 struct ListOfGames: View {
     var body: some View {
-        List {
+        Group {
             RowGames()
             RowGames()
             RowGames()
             RowGames()
-            }.background(Color.purple).offset(x: 0, y: -10)
+        }
+        .padding(.horizontal, 10)
+        .padding(.top, 5)
+        .background(Color.purple).offset(x: 0, y: -10)
+        
     }
 }
 
