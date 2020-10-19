@@ -10,11 +10,13 @@ import SwiftUI
 /// Component at all Content View, here you put your custom components
 struct ContentView: View {
     var body: some View {
-        VStack {
-            SearchView()
-            CategoriesView()
-            HighlightedCardView()
-            ListOfGames()
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                SearchView()
+                CategoriesView()
+                HighlightedCardView()
+                ListOfGames()
+            }
         }.background(Color.purple).edgesIgnoringSafeArea(.all)
     }
 }
