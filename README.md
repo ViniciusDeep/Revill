@@ -2,11 +2,17 @@
     <img height="128" alt="Screen Shot 2019-08-28 at 22 25 25" src="/design/wide.png">
 </p>
 
-✨ Revill is App to list games and search best games 
+### App Idea
+Revill should be an app in which the user can search for different games and read about it. Also, you can see the "Game of the Day" which updates everyday.
 
-✨ Design in Swift UI + Combine
 
-✨ The idea is develop this app in Hacktober Fest
+### Design
+Design should be in SwiftUI and there can be some other design too.
+
+
+### Purpose
+The idea is develop this app in HacktoberFest 2022.
+
 
 ### Expected
 ![revill](https://user-images.githubusercontent.com/32227073/65997616-0ef63f80-e470-11e9-8faa-d2d6728202a5.png)
